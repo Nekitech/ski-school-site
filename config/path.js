@@ -10,14 +10,14 @@ module.exports = {
     },
 
     pug: {
-        src: pathSrc + '/pug/**/*.pug',
+        src: pathSrc + '/pug/pages/**/*.pug',
         watch: pathSrc + '/pug/**/*.pug',
         dest: pathDest
     },
 
     scss: {
-        src: pathSrc + '/**/**/*.{scss,sass}',
-        watch: pathSrc + '/**/**/*.{scss,sass}',
+        src: pathSrc + '/pug/pages/**/*.{scss,sass}',
+        watch: pathSrc + '/pug/**/*.{scss,sass}',
         dest: pathDest + '/css'
     },
     css: {
@@ -27,8 +27,8 @@ module.exports = {
     },
 
     js: {
-        src: pathSrc + '/js/**/*.js',
-        watch: pathSrc + '/js/**/*.js',
+        src: pathSrc + '/**/**/*.js',
+        watch: pathSrc + '/**/**/*.js',
         dest: pathDest + '/js'
     },
 

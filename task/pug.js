@@ -10,7 +10,7 @@ const usePug = require('gulp-pug')
 const webpHtml = require('gulp-webp-html')
 
 const pug = () => {
-    return src(path.pug.src)
+    return src([path.pug.src, '!./src/pug/layout/*.pug'])
         .pipe(usePug(pluginsConfig.pugConf))
         .pipe(webpHtml())
         .pipe(dest(path.pug.dest))

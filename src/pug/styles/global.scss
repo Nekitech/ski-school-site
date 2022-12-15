@@ -1,0 +1,17 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  overflow-x: hidden;
+  background-color: $fonColor;
+}
+.container {
+  max-width: 1238px;
+  width: 100%;
+  margin: 0 auto;
+}

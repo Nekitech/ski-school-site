@@ -26,7 +26,6 @@ const watcher = () => {
     watch(path.fonts.watch, fonts).on('all', browserSync.reload)
 }
 
-
 // Сервер
 const server = () => {
     browserSync.init({

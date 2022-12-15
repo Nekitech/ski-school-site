@@ -1,0 +1,20 @@
+extends ../layout/layout
+block page
+    section.preview
+        img.logo.preview__logo(src='img/logo.png')
+        .preview__textBlock
+            a.preview__number(href='#') +7 (999) 999-99-99
+            .preview__titleBlock
+                h1.preview__title Горнолыжный курорт
+                h1.preview__name «Skibird»
+            p.preview__motto “Безопасность и надежность - наше кредо”
+    section.instructors
+        .container
+            h1.instructors__title Наши инструкторы
+            .instructors__wrapper
+                include ../components/cardInstructor/cardInstructor
+                +cardInstructor('img/Ludmila.png', 'Иванов Иван Иванович', 'Специалист по горнолыжному спорту')
+                +cardInstructor('img/Michail.png', 'Петров Петр Петрович', 'Специалист по горнолыжному спорту')
+                +cardInstructor('img/Gennadiy.png', 'Сидоров Сидор Сидорович', 'Специалист по горнолыжному спорту')
+
+

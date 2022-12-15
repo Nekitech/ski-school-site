@@ -15,7 +15,17 @@ const img = () => {
     return src(path.img.src)
         .pipe(newer(path.img.dest))
         .pipe(webp())
-        .pipe(imagemin(pluginsConfig.imagemin))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.optipng({optimizationLevel: 1}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
         .pipe(dest(path.img.dest))
 
         .pipe(src(path.img.src))
