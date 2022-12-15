@@ -14,6 +14,7 @@ body {
   max-width: 1238px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .cardInstructor {
@@ -180,6 +181,108 @@ body {
   margin-top: 45px;
 }
 
+.priceList {
+  margin: 75px 0;
+}
+
+.priceList__table-wrapper {
+  margin-top: 43px;
+  overflow-x: auto;
+}
+
+.priceList__table-wrapper::-webkit-scrollbar {
+  width: 20px;
+  background-color: #fff;
+}
+
+.priceList__table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #1759D6;
+  border-radius: 10px;
+}
+
+.priceList__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000;
+  text-align: center;
+}
+
+.priceList__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.priceList__table-body .priceList__table-row:not(:last-child) {
+  border-bottom: 2px solid #000;
+}
+
+.priceList__table-head .priceList__table-row {
+  border-bottom: 2px solid #000;
+}
+
+.priceList__table-cell {
+  font-style: normal;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.16px;
+  color: #000;
+}
+
+.priceList__table-cell__titleCol {
+  font-weight: 600;
+}
+
+.priceList__table-cell__timeLesson {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.priceList__table-cell__data {
+  font-size: 16px;
+}
+
+.priceList__table-cell:nth-child(1) {
+  text-align: start;
+}
+
+.priceList__table-cell:nth-child(3) {
+  background-color: #1759D6;
+  color: #fff;
+}
+
+.priceList__table-head .priceList__table-cell:nth-child(3) {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.priceList__table-body .priceList__table-row:last-child .priceList__table-cell:nth-child(3) {
+  border-radius: 0px 0px 4px 4px;
+}
+
 @supports (-webkit-appearance:none) {
 
+}
+
+@media (max-width: 768px) {
+  .priceList__table {
+    width: 800px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 480px) {
+  .priceList__table {
+    width: 600px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
 }
