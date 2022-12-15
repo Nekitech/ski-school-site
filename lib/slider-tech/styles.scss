@@ -1,0 +1,51 @@
+
+.slider {
+    position: relative;
+}
+
+.wrapperSlider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.trackSlider {
+    width: 4000px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    gap: 10px;
+
+}
+
+.elementSlider {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+}
+.navigationSlider {
+    position: absolute;
+}
+.activeBtn {
+    fill: #28B0A6;
+}
+.dotsSlider {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+.activeDot {
+    background-color: #002D7E;
+}

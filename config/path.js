@@ -17,7 +17,7 @@ module.exports = {
 
     scss: {
         src: pathSrc + '/pug/pages/**/*.{scss,sass}',
-        watch: pathSrc + '/pug/**/*.{scss,sass}',
+        watch: [pathSrc + '/pug/**/*.{scss,sass}', './lib/**/*.scss'],
         dest: pathDest + '/css'
     },
     css: {
@@ -28,7 +28,7 @@ module.exports = {
 
     js: {
         src: pathSrc + '/**/**/*.js',
-        watch: pathSrc + '/**/**/*.js',
+        watch: [pathSrc + '/**/**/*.js', './lib/**/*.js'],
         dest: pathDest + '/js'
     },
 

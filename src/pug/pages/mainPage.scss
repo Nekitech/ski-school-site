@@ -84,6 +84,9 @@ $colorInstuctors: #000;
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    row-gap: 10px;
+    flex-wrap: wrap;
     margin-top: 45px;
   }
 }
@@ -177,3 +180,40 @@ $colorInstuctors: #000;
 
 
 }
+
+
+//Reviews
+.reviews {
+  margin: 75px 0;
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #fff;
+    text-align: center;
+  }
+}
+.slider.reviews__slider {
+  height: 554px;
+  background-color: #1759D6;
+  border-radius: 32px;
+
+}
+
+.elementSlider.reviews__elemSlider {
+  min-width: 1238px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+
+  background-color: #1759D6;
+  color: #fff;
+}
+

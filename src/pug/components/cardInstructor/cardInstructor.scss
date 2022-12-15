@@ -51,7 +51,6 @@
   }
 
   &__button {
-
     width: 163px;
     height: 40px;
 
@@ -68,5 +67,18 @@
     margin-top: 20px;
     border: none;
     cursor: pointer;
+
+    position: relative;
   }
+  &__button:after {
+    content: url('../img/arrowBtnInstructor.svg');
+    position: absolute;
+    top: 53%;
+    right: 18px;
+    transform: translateY(-50%);
+  }
+}
+
+.cardInstructor:not(:last-child) {
+  margin-right: 100px;
 }

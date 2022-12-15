@@ -1,5 +1,8 @@
 @import 'variables';
 @import 'mediaQueries';
+@import 'fonts';
+
+@import '../../../lib/slider-tech/styles.scss';
 
 * {
   box-sizing: border-box;
@@ -10,9 +13,10 @@
 body {
   overflow-x: hidden;
   background-color: $fonColor;
+  font-family: Montserrat, sans-serif;
 }
 .container {
-  max-width: 1238px;
+  max-width: $containerWidth;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;

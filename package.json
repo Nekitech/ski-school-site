@@ -59,5 +59,8 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
     "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "webpack-stream": "^7.0.0"
   }
 }

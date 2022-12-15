@@ -1,3 +1,102 @@
+@font-face {
+  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.eot") format("eot"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+@font-face {
+  src: url("../fonts/Montserrat-Medium.ttf") format("ttf"), url("../fonts/Montserrat-Medium.eot") format("eot"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-family: Poppins;
+}
+
+@font-face {
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("ttf"), url("../fonts/Montserrat-SemiBold.eot") format("eot"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf") format("ttf"), url("../fonts/Montserrat-SemiBoldItalic.eot") format("eot"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../fonts/Montserrat-Light.ttf") format("ttf"), url("../fonts/Montserrat-Light.eot") format("eot"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-family: Montserrat;
+}
+
+.slider {
+  position: relative;
+}
+
+.wrapperSlider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.trackSlider {
+  width: 4000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  gap: 10px;
+}
+
+.elementSlider {
+  width: 400px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+}
+
+.navigationSlider {
+  position: absolute;
+}
+
+.activeBtn {
+  fill: #28B0A6;
+}
+
+.dotsSlider {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+
+.activeDot {
+  background-color: #002D7E;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -8,6 +107,7 @@
 body {
   overflow-x: hidden;
   background-color: #F0F0F0;
+  font-family: Montserrat, sans-serif;
 }
 
 .container {
@@ -89,6 +189,21 @@ body {
   margin-top: 20px;
   border: none;
   cursor: pointer;
+  position: relative;
+}
+
+.cardInstructor__button:after {
+  content: url("../img/arrowBtnInstructor.svg");
+  position: absolute;
+  top: 53%;
+  right: 18px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cardInstructor:not(:last-child) {
+  margin-right: 100px;
 }
 
 .preview {
@@ -178,6 +293,12 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  row-gap: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 45px;
 }
 
@@ -261,6 +382,44 @@ body {
 
 .priceList__table-body .priceList__table-row:last-child .priceList__table-cell:nth-child(3) {
   border-radius: 0px 0px 4px 4px;
+}
+
+.reviews {
+  margin: 75px 0;
+}
+
+.reviews__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #fff;
+  text-align: center;
+}
+
+.slider.reviews__slider {
+  height: 554px;
+  background-color: #1759D6;
+  border-radius: 32px;
+}
+
+.elementSlider.reviews__elemSlider {
+  min-width: 1238px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+  background-color: #1759D6;
+  color: #fff;
 }
 
 @supports (-webkit-appearance:none) {
