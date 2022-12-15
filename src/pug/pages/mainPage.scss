@@ -10,7 +10,7 @@ $colorPreview: #fff;
   width: 100vw;
   height: 100vh;
   background: url("../img/fon_preview.webp") no-repeat;
-    background-size: cover;
+  background-size: cover;
 
   &__logo {
     width: 310px;
@@ -19,6 +19,7 @@ $colorPreview: #fff;
     top: 17px;
     left: 101px
   }
+
   &__textBlock {
     position: absolute;
     right: 101px;
@@ -30,6 +31,7 @@ $colorPreview: #fff;
     justify-content: space-between;
     height: 80%;
   }
+
   &__number {
     font-style: normal;
     font-weight: 600;
@@ -39,12 +41,14 @@ $colorPreview: #fff;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-decoration: none;
   }
+
   &__title {
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 59px;
   }
+
   &__name {
     font-style: normal;
     font-weight: 900;
@@ -52,6 +56,7 @@ $colorPreview: #fff;
     line-height: 59px;
     text-align: end;
   }
+
   &__motto {
     font-style: italic;
     font-weight: 600;
@@ -67,14 +72,108 @@ $colorInstuctors: #000;
 
 .instructors {
   margin-top: 75px;
+
   &__title {
     font-weight: 600;
     font-size: 40px;
     line-height: 49px;
     color: $colorInstuctors;
+    text-align: center;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 45px;
   }
+}
+
+//Price List
+
+
+.priceList {
+  margin: 75px 0;
+
+  &__table-wrapper {
+    margin-top: 43px;
+    overflow-x: auto;
+  }
+
+  &__table-wrapper::-webkit-scrollbar {
+    width: 20px;
+    background-color: #fff;
+  }
+
+  &__table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #1759D6;
+    border-radius: 10px;
+  }
+
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: $colorInstuctors;
+    text-align: center;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__table-body &__table-row:not(:last-child) {
+    border-bottom: 2px solid #000;
+  }
+
+  &__table-head &__table-row {
+    border-bottom: 2px solid #000;
+  }
+
+  &__table-cell {
+    font-style: normal;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    color: $colorInstuctors;
+  }
+
+  &__table-cell__titleCol {
+    font-weight: 600;
+  }
+
+  &__table-cell__timeLesson {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  &__table-cell__data {
+    font-size: 16px;
+  }
+
+  &__table-cell:nth-child(1) {
+    text-align: start;
+  }
+
+  &__table-cell:nth-child(3) {
+    background-color: #1759D6;
+    color: #fff
+  }
+
+  &__table-head &__table-cell:nth-child(3) {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  &__table-body
+  &__table-row:last-child
+  &__table-cell:nth-child(3) {
+    border-radius: 0px 0px 4px 4px;
+  }
+
+
 }
