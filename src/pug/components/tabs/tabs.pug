@@ -1,0 +1,10 @@
+mixin tabs(tabs)
+    .tabs
+        ul.tabs__list
+            each tab in tabs
+                li.tabs__item
+                    p.tabs__item__name
+                         =tab.name
+                         img.tabs__item__cross(src='img/cross_tabs.svg')
+                    p.tabs__item__text
+                         =tab.text

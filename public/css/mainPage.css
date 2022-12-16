@@ -205,6 +205,95 @@ body {
   margin-right: 100px;
 }
 
+.tabs {
+  max-width: 733px;
+  width: 100%;
+  height: auto;
+}
+
+.tabs__list {
+  height: 100%;
+}
+
+.tabs__item {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  margin-bottom: 32px;
+  height: auto;
+  max-height: 72px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+  overflow: hidden;
+  border-bottom: 2px solid #ECECF1;
+}
+
+.tabs__item__name {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: #2E2E2E;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.tabs__item__text {
+  padding-bottom: 28px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  color: #434451;
+}
+
+.tabs__item:last-child {
+  margin-bottom: 0;
+}
+
+.tabs__item__cross {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.tabs__item.activeTab {
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  height: auto;
+  max-height: 500px;
+}
+
+.tabs__item__cross.activeCross {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
 .preview {
   width: 100vw;
   height: 100vh;
@@ -455,6 +544,60 @@ body {
   -ms-flex-align: center;
   align-items: center;
   background-color: #1759D6;
+}
+
+.QandA {
+  margin: 75px 0;
+}
+
+.QandA__wrapper {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 32px;
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.QandA__popularQuestions__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.015em;
+  color: #2E2E2E;
+}
+
+.QandA__popularQuestions__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  color: #434451;
+  margin: 4px 0 24px 0;
+}
+
+.QandA__popularQuestions__button {
+  width: 180px;
+  height: 48px;
+  background: #1759D4;
+  border-radius: 16px;
+  padding: 8px 29px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
 
 @supports (-webkit-appearance:none) {

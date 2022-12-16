@@ -25,26 +25,26 @@ block page
                         tr.priceList__table-row
                             th.priceList__table-cell
                             th.priceList__table-cell
-                                    span.priceList__table-cell__titleCol Старт
-                                    span.priceList__table-cell__data
-                                        br
-                                        | 01.10 - 23.12
-                                        br
-                                        | 01.04 - 31.05
+                                span.priceList__table-cell__titleCol Старт
+                                span.priceList__table-cell__data
+                                    br
+                                    | 01.10 - 23.12
+                                    br
+                                    | 01.04 - 31.05
                             th.priceList__table-cell
-                                    span.priceList__table-cell__titleCol Высокий
-                                    span.priceList__table-cell__data
-                                        br
-                                        | 9.01 - 31.03
-                                        br
-                                        | 13.03 - 31.03
+                                span.priceList__table-cell__titleCol Высокий
+                                span.priceList__table-cell__data
+                                    br
+                                    | 9.01 - 31.03
+                                    br
+                                    | 13.03 - 31.03
                             th.priceList__table-cell
-                                    span.priceList__table-cell__titleCol Пик
-                                    span.priceList__table-cell__data
-                                        br
-                                        | 24.12 - 08.01
-                                        br
-                                        | 01.02 - 12.03
+                                span.priceList__table-cell__titleCol Пик
+                                span.priceList__table-cell__data
+                                    br
+                                    | 24.12 - 08.01
+                                    br
+                                    | 01.02 - 12.03
                     tbody.priceList__table-body
                         tr.priceList__table-row
                             td.priceList__table-cell
@@ -52,66 +52,66 @@ block page
                                 br
                                 span.priceList__table-cell__timeLesson 1 человек 2часа
                             td.priceList__table-cell
-                                    | 6000
+                                | 6000
                             td.priceList__table-cell
-                                    | 6800
+                                | 6800
                             td.priceList__table-cell
-                                    | 7800
+                                | 7800
                         tr.priceList__table-row
                             td.priceList__table-cell
                                 | Парное занятие
                                 br
                                 span.priceList__table-cell__timeLesson 2 человека 2часа
                             td.priceList__table-cell
-                                    | 8200
+                                | 8200
                             td.priceList__table-cell
-                                    | 9100
+                                | 9100
                             td.priceList__table-cell
-                                    | 10900
+                                | 10900
                         tr.priceList__table-row
                             td.priceList__table-cell
                                 | Групповое занятие
                                 br
                                 span.priceList__table-cell__timeLesson от 4-х человек 2часа
                             td.priceList__table-cell
-                                    | 2700
+                                | 2700
                             td.priceList__table-cell
-                                    | 2800
+                                | 2800
                             td.priceList__table-cell
-                                    | 3000
+                                | 3000
                         tr.priceList__table-row
                             td.priceList__table-cell
                                 | Мини группа
                                 br
                                 span.priceList__table-cell__timeLesson 3 человека 2часа
                             td.priceList__table-cell
-                                    | 10500
+                                | 10500
                             td.priceList__table-cell
-                                    | 11600
+                                | 11600
                             td.priceList__table-cell
-                                    | 13900
+                                | 13900
                         tr.priceList__table-row
                             td.priceList__table-cell
                                 | Личный гид
                                 br
                                 span.priceList__table-cell__timeLesson 1-2 человека 6часов
                             td.priceList__table-cell
-                                    | 22200
+                                | 22200
                             td.priceList__table-cell
-                                    | 25400
+                                | 25400
                             td.priceList__table-cell
-                                    | 29400
+                                | 29400
                         tr.priceList__table-row
                             td.priceList__table-cell
                                 | Индивидуальное детское занятие
                                 br
                                 span.priceList__table-cell__timeLesson 1 ребенок 1час
                             td.priceList__table-cell
-                                    | 3300
+                                | 3300
                             td.priceList__table-cell
-                                    | 3800
+                                | 3800
                             td.priceList__table-cell
-                                    | 4400
+                                | 4400
     section.reviews
         .container
             .slider.reviews__slider
@@ -179,6 +179,38 @@ block page
                                 h3.reviews__elemSlider__textBlock__name
                                     | Ксения Петрова
                 .dotsSlider
+    section.QandA
+        .container
+            .QandA__wrapper
+                .QandA__popularQuestions
+                    h1.QandA__popularQuestions__title
+                        | Часто задаваемые вопросы
+                    p.QandA__popularQuestions__text
+                        | Не нашли ответа на свой вопрос?
+                    button.QandA__popularQuestions__button
+                        | Задать вопрос
+                .QandA__tabs
+                        -
+                            var tabs = [
+                                {
+                                    name: 'Физическая подготовка — какая необходима?',
+                                    text: 'Часто сложностью при обучении становятся физические возможности. Если имеется сложность выдержать 2-3 часа занятий, это весьма тормозит процесс. Но не является препятствием. '
+                                },
+                                {
+                                    name: 'Сколько времени необходимо, чтобы научиться?',
+                                    text: 'Часто сложностью при обучении становятся физические возможности. Если имеется сложность выдержать 2-3 часа занятий, это весьма тормозит процесс. Но не является препятствием. '
+                                },
+                                {
+                                    name: 'Разве можно ехать в горы совсем не умея кататься?',
+                                    text: 'Не только можно, но нужно — научитесь гораздо быстрее. В горах склоны свободнее и другие катающиеся создают меньше помех. Склоны имеют больший размер, не приходится отвлекаться на их пределы.'
+                                },
+                                {
+                                    name: 'Реально ли исправить технику / ошибки?',
+                                    text: 'Часто сложностью при обучении становятся физические возможности. Если имеется сложность выдержать 2-3 часа занятий, это весьма тормозит процесс. Но не является препятствием.'
+                                }
 
+                            ]
+                        include ../components/tabs/tabs
+                        +tabs(tabs)
 
 
