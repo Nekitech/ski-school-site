@@ -305,6 +305,9 @@ body {
   background: #FFFFFF;
   border-radius: 32px;
   position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   display: none;
 }
 
@@ -341,6 +344,10 @@ body {
   object-fit: cover;
 }
 
+.popupCard__img .popupCard__img--3 {
+  height: 130%;
+}
+
 .popupCard__name {
   font-style: normal;
   font-weight: 600;
@@ -361,7 +368,8 @@ body {
 }
 
 .popupCard__button {
-  width: 354px;
+  max-width: 354px;
+  width: 100%;
   height: 65px;
   background: #1759D4;
   border-radius: 32px;
@@ -407,13 +415,13 @@ body {
     display: block;
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translate(-50%, 50%) scale(0.7);
-    transform: translate(-50%, 50%) scale(0.7);
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
   }
 
   100% {
-    -webkit-transform: translate(-50%, -50%) scale(0.7);
-    transform: translate(-50%, -50%) scale(0.7);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     visibility: visible;
     opacity: 100%;
   }
@@ -424,13 +432,13 @@ body {
     display: block;
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translate(-50%, 50%) scale(0.7);
-    transform: translate(-50%, 50%) scale(0.7);
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
   }
 
   100% {
-    -webkit-transform: translate(-50%, -50%) scale(0.7);
-    transform: translate(-50%, -50%) scale(0.7);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     visibility: visible;
     opacity: 100%;
   }
@@ -875,6 +883,85 @@ body {
 @media (max-width: 480px) {
   .priceList__table {
     width: 600px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-height: 1000px) {
+  .popup.popupCard {
+    width: 400px;
+    height: 628px;
+  }
+
+  .popupCard__img {
+    width: 320px;
+    height: 270px;
+  }
+
+  .popupCard__name {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .popupCard__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .popupCard__close {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    top: 10px;
+    right: 10px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-height: 600px) {
+  .popup.popupCard {
+    width: 308px;
+    height: 482px;
+  }
+
+  .popupCard__wrapper {
+    padding: 28px 37px 28px 37px;
+  }
+
+  .popupCard__img {
+    width: 148px;
+    height: 119px;
+    border-radius: 26px;
+  }
+
+  .popupCard__name {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .popupCard__text {
+    line-height: 22px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .popupCard__button {
+    font-size: 13px;
+    height: 31px;
+  }
+
+  .popupCard__close {
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+    top: 8px;
+    right: 8px;
   }
 
 @supports (-webkit-appearance:none) {

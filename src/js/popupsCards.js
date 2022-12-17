@@ -7,7 +7,7 @@ id_popupsCards.forEach((btn) => {
         const popup = document.querySelector(`.popup#${id}`)
 
         popup.classList.add('activePopup')
-        document.body.style.overflow = 'hidden'
+        document.body.style.overflowY = 'hidden'
         popup_fon.style.display = 'block'
     })
 })
@@ -15,7 +15,7 @@ close_popupsCards.forEach((closeBtn) => {
     closeBtn.addEventListener('click', (e) => {
         const popup = e.target?.closest('.popup')
         popup.classList.remove('activePopup')
-        document.body.style.overflow = 'auto'
+        document.body.style.overflowY = 'auto'
         popup_fon.style.display = 'none'
     })
 })

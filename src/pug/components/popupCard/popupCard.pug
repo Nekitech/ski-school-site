@@ -1,8 +1,8 @@
-mixin popupCard(inst)
+mixin popupCard(inst, num)
     .popup.popupCard(id=inst.name)
         .popupCard__wrapper
             .popupCard__img
-                img(src=inst.img)
+                img(src=inst.img, class='popupCard__img--' + num)
             .popupCard__textBlock
                 h3.popupCard__name=inst.name
                 p.popupCard__text=inst.descr
