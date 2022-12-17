@@ -1,0 +1,18 @@
+mixin popupForm(id)
+    .popup.popupForm(id=id)
+        .popupForm__wrapper
+            h3.popupForm__title
+                | Задать вопрос
+            form.popupForm__form
+                .popupForm__form__content
+                    .popupForm__form__item
+                        label.popupForm__form__label(for="name") Ваше имя
+                        input.popupForm__form__name(type='text' placeholder='Имя')
+                    .popupForm__form__item
+                        label.popupForm__form__label(for="e-mail") Ваш e-mail
+                        input.popupForm__form__email(type='text' placeholder='E-mail')
+                    .popupForm__form__item
+                        label.popupForm__form__label(for="text") Ваш вопрос
+                        textarea(placeholder="Напишите сюда текст обращения").popupForm__form__text
+            button.popupForm__button Отправить
+        img.popup-close.popupForm__close(src='img/close.svg')

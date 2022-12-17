@@ -5,6 +5,7 @@
 @import '../components/cardInstructor/cardInstructor';
 @import '../components/tabs/tabs';
 @import '../components/popupCard/popupCard';
+@import '../components/popupForm/popupForm';
 
 //chunk
 @import '../chunk/footer/footer';
@@ -313,7 +314,6 @@ $colorInstuctors: #000;
     color: #FFFFFF;
 
     border: none;
-    cursor: pointer;
   }
 
 }

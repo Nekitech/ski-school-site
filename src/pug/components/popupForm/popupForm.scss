@@ -1,0 +1,123 @@
+.popupForm {
+  width: 404px;
+  height: 559px;
+  background: #fff;
+  border-radius: 32px;
+  padding: 52px 40px 52px 40px;
+
+  display: none;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form__item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form__text {
+    resize: none;
+    height: 107px;
+  }
+
+  &__form__text, &__form__email, &__form__name {
+    outline: none;
+    border-radius: 16px;
+    border: 1.5px solid #ABA8A8;
+    padding: 17px 0 18px 17px;
+  }
+
+  &__form__label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.015em;
+
+    color: #ABA8A8;
+
+    margin-bottom: 8px;
+  }
+
+  &__form__name::placeholder,
+  &__form__email::placeholder,
+  &__form__text::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.015em;
+
+    color: #ABA8A8;
+  }
+
+  &__button {
+    width: 148px;
+    height: 48px;
+    background: #1759D4;
+    border-radius: 16px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+
+    border: 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.popupForm.activePopup {
+  display: block;
+}
+
+@media (max-width: 420px) {
+  .popupForm {
+    padding: 30px 20px;
+    width: 340px;
+    height: 485px;
+    border-radius: 20px;
+
+    &__form__label {
+      font-size: 12px;
+    }
+
+    &__form__name::placeholder,
+    &__form__email::placeholder,
+    &__form__text::placeholder {
+      font-size: 12px;
+    }
+  }
+
+
+}

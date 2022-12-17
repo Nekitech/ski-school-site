@@ -220,7 +220,7 @@ block page
                         | Часто задаваемые вопросы
                     p.QandA__popularQuestions__text
                         | Не нашли ответа на свой вопрос?
-                    button.QandA__popularQuestions__button
+                    button.QandA__popularQuestions__button(id='form_popup')
                         | Задать вопрос
                 .QandA__tabs
                         -
@@ -247,4 +247,6 @@ block page
                         +tabs(tabs)
 
 
+    include ../components/popupForm/popupForm
+    +popupForm('form_popup')
     include ../chunk/footer/footer
