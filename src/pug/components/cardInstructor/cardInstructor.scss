@@ -69,12 +69,14 @@
     cursor: pointer;
 
     position: relative;
+
+    padding-right: 26px;
   }
   &__button:after {
     content: url('../img/arrowBtnInstructor.svg');
     position: absolute;
     top: 53%;
-    right: 18px;
+    right: 28px;
     transform: translateY(-50%);
   }
 }

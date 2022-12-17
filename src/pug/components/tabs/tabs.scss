@@ -60,6 +60,7 @@
   &__item__cross {
     transform: rotate(0);
     transition: 0.5s all;
+    user-select: none;
   }
 
 }

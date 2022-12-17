@@ -1,0 +1,27 @@
+.popupCard {
+  width: 600px;
+  height: 943px;
+
+  background: #FFFFFF;
+  border-radius: 32px;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 40px 40px;
+  }
+  &__img {
+    width: 478px;
+    height: 405px;
+    border-radius: 16px;
+  }
+  &__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

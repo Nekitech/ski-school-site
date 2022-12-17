@@ -26,6 +26,17 @@
       /***/
     },
 
+    /***/"./src/js/popups.js":
+    /*!**************************!*\
+      !*** ./src/js/popupsCards.js ***!
+      \**************************/
+    /***/
+    function srcJsPopupsJs() {
+      eval("\n\n//# sourceURL=webpack://project-hexagon/./src/js/popupsCards.js?");
+
+      /***/
+    },
+
     /***/"./src/js/slider.js":
     /*!**************************!*\
       !*** ./src/js/slider.js ***!
@@ -45,7 +56,7 @@
       \******************************/
     /***/
     function srcJsTabsScriptJs() {
-      eval("const tabs = document.querySelector('.tabs')\r\nconst listTabs = document.querySelectorAll('.tabs__item')\r\ntabs.addEventListener('click', (e) => {\r\n    console.log(e.target)\r\n    if(!e.target.classList.contains('tabs__item')) return\r\n    // listTabs.forEach((tab) => {\r\n    //     tab.classList.remove('activeTab')\r\n    //     tab.querySelector('.tabs__item__cross')\r\n    //         ?.classList.remove('activeCross')\r\n    // })\r\n    e.target.classList.toggle('activeTab')\r\n\r\n    const currCross = e.target?.querySelector('.tabs__item__cross')\r\n    currCross?.classList.toggle('activeCross')\r\n\r\n})\r\n\n\n//# sourceURL=webpack://project-hexagon/./src/js/tabsScript.js?");
+      eval("const tabs = document.querySelector('.tabs')\r\n// const listTabs = document.querySelectorAll('.tabs__item')\r\ntabs.addEventListener('click', (e) => {\r\n    console.log(e.target)\r\n    if(!e.target?.classList.contains('tabs__item')) return\r\n    // listTabs.forEach((tab) => {\r\n    //     tab.classList.remove('activeTab')\r\n    //     tab.querySelector('.tabs__item__cross')\r\n    //         ?.classList.remove('activeCross')\r\n    // })\r\n    e.target?.classList.toggle('activeTab')\r\n\r\n    const currCross = e.target?.querySelector('.tabs__item__cross')\r\n    currCross?.classList.toggle('activeCross')\r\n\r\n})\r\n\n\n//# sourceURL=webpack://project-hexagon/./src/js/tabsScript.js?");
 
       /***/
     }
@@ -141,6 +152,8 @@
   /******/ // startup
   /******/ // Load entry module and return exports
   /******/ // This entry module can't be inlined because the eval devtool is used.
+  /******/
+  __webpack_require__("./src/js/popups.js");
   /******/
   __webpack_require__("./src/js/slider.js");
   /******/

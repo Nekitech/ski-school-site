@@ -1,0 +1,10 @@
+mixin popupCard(img, name, text)
+    .popupCard
+        .popupCard__wrapper
+            .popupCard__img
+                img(src=img)
+            .popupCard__textBlock
+                h3.popupCard__name #{name}
+                p.popupCard__text #{text}
+            button.popupCard__button Записаться
+    //img.popupCard__close(src='img/close.svg')
