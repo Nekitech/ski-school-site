@@ -26,13 +26,13 @@
       /***/
     },
 
-    /***/"./src/js/popups.js":
-    /*!**************************!*\
-      !*** ./src/js/popupsCards.js ***!
-      \**************************/
+    /***/"./src/js/popup.js":
+    /*!*************************!*\
+      !*** ./src/js/popup.js ***!
+      \*************************/
     /***/
-    function srcJsPopupsJs() {
-      eval("\n\n//# sourceURL=webpack://project-hexagon/./src/js/popupsCards.js?");
+    function srcJsPopupJs() {
+      eval("class Popup {\r\n    constructor(listId) {\r\n        this.listId = listId;\r\n    }\r\n    init() {\r\n        console.log(this.listId)\r\n        this.listId.forEach((btn) => {\r\n            btn.addEventListener('click', (e) => {\r\n                const id_popup = e.target?.getAttribute('id')\r\n                const popup = document.querySelector(`.popup#${id_popup}`)\r\n\r\n                this.open(popup)\r\n            })\r\n        })\r\n        close_popupsCards.forEach((closeBtn) => {\r\n            closeBtn.addEventListener('click', (e) => {\r\n                const popup = e.target?.closest('.popup')\r\n\r\n                this.close(popup)\r\n            })\r\n        })\r\n    }\r\n    open(popup) {\r\n        popup.classList.add('activePopup')\r\n        document.body.style.overflowY = 'hidden'\r\n        popup_fon.style.display = 'block'\r\n    }\r\n\r\n    close(popup) {\r\n        popup.classList.remove('activePopup')\r\n        document.body.style.overflowY = 'auto'\r\n        popup_fon.style.display = 'none'\r\n    }\r\n}\r\n\r\nconst id_popupsCards = document.querySelectorAll('.cardInstructor__button')\r\nconst id_popupForm = document.querySelectorAll('.QandA__popularQuestions__button')\r\n\r\nconst popup_fon = document.querySelector('.popup-fon')\r\nconst close_popupsCards = document.querySelectorAll('.popup-close')\r\n\r\nconst popupCardsInst = new Popup(id_popupsCards)\r\npopupCardsInst.init()\r\n\r\nconst popupForm = new Popup(id_popupForm)\r\npopupForm.init()\r\n\r\npopup_fon.addEventListener('click', (e) => {\r\n    const popup = document.querySelector('.popup.activePopup')\r\n    popup.classList.remove('activePopup')\r\n    document.body.style.overflowY = 'auto'\r\n    popup_fon.style.display = 'none'\r\n})\n\n//# sourceURL=webpack://project-hexagon/./src/js/popup.js?");
 
       /***/
     },
@@ -153,7 +153,7 @@
   /******/ // Load entry module and return exports
   /******/ // This entry module can't be inlined because the eval devtool is used.
   /******/
-  __webpack_require__("./src/js/popups.js");
+  __webpack_require__("./src/js/popup.js");
   /******/
   __webpack_require__("./src/js/slider.js");
   /******/
