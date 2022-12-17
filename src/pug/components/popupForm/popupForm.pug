@@ -15,4 +15,8 @@ mixin popupForm(id)
                         label.popupForm__form__label(for="text") Ваш вопрос
                         textarea(placeholder="Напишите сюда текст обращения").popupForm__form__text
             button.popupForm__button Отправить
+        .popupForm__afterSendForm
+            p.popupForm__afterSendForm__text
+                | Спасибо за ваш вопрос! Мы ответим на указанную электронную почту в течение суток
+            img.popupForm__afterSendForm__img(src='img/successSendFormImg.webp')
         img.popup-close.popupForm__close(src='img/close.svg')

@@ -95,6 +95,22 @@
     top: 10px;
     right: 10px;
   }
+
+  &__afterSendForm {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__afterSendForm__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+
+    color: #2E2E2E;
+  }
 }
 
 .popupForm.activePopup {
