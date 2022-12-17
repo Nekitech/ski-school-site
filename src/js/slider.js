@@ -4,6 +4,8 @@ const sliderReview = new SliderTech('.slider', {
     slidersView: 1,
     speed: 0.6,
     counter: false,
-    dots: true
+    dots: true,
+    autoplay: true,
+    timeout: 2,
 })
 sliderReview.initSlider()
