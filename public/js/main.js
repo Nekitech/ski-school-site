@@ -45,7 +45,7 @@
     function srcJsSliderJs(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
-      eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib_slider_tech_sliderCreate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../lib/slider-tech/sliderCreate.js */ \"./lib/slider-tech/sliderCreate.js\");\n\r\n\r\nconst sliderReview = new _lib_slider_tech_sliderCreate_js__WEBPACK_IMPORTED_MODULE_0__.SliderTech('.slider', {\r\n    slidersView: 1,\r\n    speed: 0.6,\r\n    counter: false,\r\n    dots: true,\r\n    autoplay: true,\r\n    timeout: 2,\r\n})\r\nsliderReview.initSlider()\r\n\n\n//# sourceURL=webpack://project-hexagon/./src/js/slider.js?");
+      eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib_slider_tech_sliderCreate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../lib/slider-tech/sliderCreate.js */ \"./lib/slider-tech/sliderCreate.js\");\n\r\n\r\nconst sliderReview = new _lib_slider_tech_sliderCreate_js__WEBPACK_IMPORTED_MODULE_0__.SliderTech('.slider', {\r\n    slidersView: 1,\r\n    speed: 0.6,\r\n    counter: false,\r\n    dots: true,\r\n    autoplay: false,\r\n    timeout: 2,\r\n})\r\nsliderReview.initSlider()\r\n\n\n//# sourceURL=webpack://project-hexagon/./src/js/slider.js?");
 
       /***/
     },

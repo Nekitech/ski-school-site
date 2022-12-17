@@ -104,7 +104,6 @@ $colorInstuctors: #000;
     justify-content: space-between;
     justify-content: center;
     row-gap: 10px;
-    flex-wrap: wrap;
     margin-top: 45px;
   }
 }
@@ -186,6 +185,7 @@ $colorInstuctors: #000;
     color: #fff
   }
 
+
   &__table-head &__table-cell:nth-child(3) {
     border-radius: 4px 4px 0px 0px;
   }
@@ -263,6 +263,7 @@ $colorInstuctors: #000;
 
 .QandA {
     margin: 75px 0;
+
   &__wrapper {
     width: 100%;
     height: auto;
@@ -271,8 +272,16 @@ $colorInstuctors: #000;
 
     padding: 48px 40px;
 
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+  &__content {
     display: flex;
     justify-content: space-between;
+  }
+  &__popularQuestions {
+    margin-right: 50px;
   }
 
   &__popularQuestions__title {
@@ -317,4 +326,6 @@ $colorInstuctors: #000;
   }
 
 }
+
+
 

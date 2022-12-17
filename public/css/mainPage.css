@@ -103,6 +103,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: #F0F0F0;
@@ -835,8 +839,6 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   row-gap: 10px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-top: 45px;
 }
 
@@ -1006,12 +1008,23 @@ button {
   background: #FFFFFF;
   border-radius: 32px;
   padding: 48px 40px;
+}
+
+.QandA__title {
+  margin-bottom: 12px;
+}
+
+.QandA__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.QandA__popularQuestions {
+  margin-right: 50px;
 }
 
 .QandA__popularQuestions__title {
@@ -1053,9 +1066,9 @@ button {
 
 }
 
-@media (max-width: 768px) {
-  .priceList__table {
-    width: 800px;
+@media (max-width: 1020px) {
+  .cardInstructor:not(:last-child) {
+    margin-right: 30px;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1063,9 +1076,65 @@ button {
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 860px) {
+  .instructors__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 768px) {
   .priceList__table {
-    width: 600px;
+    width: 800px;
+  }
+
+  .priceList__table-cell:nth-child(2),
+  .priceList__table-cell:nth-child(4) {
+    display: none;
+  }
+
+  .priceList__table-wrapper {
+    overflow-x: hidden;
+  }
+
+  .priceList__table {
+    width: 100%;
+  }
+
+  .priceList__table-cell:nth-child(3) {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .QandA__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .QandA__popularQuestions__title {
+    margin-bottom: 32px;
+  }
+
+  .QandA__popularQuestions__text {
+    margin: 32px 0;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 660px) {
+  .cardInstructor:not(:last-child) {
+    margin-right: 0;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1113,6 +1182,30 @@ button {
   .popupForm__form__email::placeholder,
   .popupForm__form__text::placeholder {
     font-size: 12px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 375px) {
+  .priceList__table-cell {
+    font-size: 15px;
+  }
+
+  .priceList__table-cell__timeLesson {
+    font-size: 13px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 320px) {
+  .tabs__item__name {
+    font-size: 18px;
   }
 
 @supports (-webkit-appearance:none) {

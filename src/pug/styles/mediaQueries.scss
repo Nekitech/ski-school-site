@@ -5,9 +5,71 @@
 
 }
 
-@media (max-width: 480px) {
+//@media (max-width: 480px) {
+//  .priceList__table {
+//    width: 600px;
+//  }
+//
+//}
+
+@media (max-width: 768px) {
+
+  .priceList__table-cell:nth-child(2),
+  .priceList__table-cell:nth-child(4) {
+    display: none;
+  }
+  .priceList__table-wrapper {
+    overflow-x: hidden;
+  }
   .priceList__table {
-    width: 600px;
+    width: 100%;
+  }
+  .priceList__table-cell:nth-child(3) {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+
+}
+
+@media(max-width: 375px) {
+  .priceList__table-cell {
+    font-size: 15px;
+  }
+  .priceList__table-cell__timeLesson {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .QandA__content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+  }
+  .QandA__popularQuestions__title {
+    margin-bottom: 32px;
+  }
+  .QandA__popularQuestions__text {
+    margin: 32px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .tabs__item__name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 660px) {
+  .cardInstructor:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .instructors__wrapper {
+    flex-wrap: wrap;
   }
 
 }
