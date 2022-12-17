@@ -13,12 +13,42 @@ block page
             h1.instructors__title Наши инструкторы
             .instructors__wrapper
                 include ../components/cardInstructor/cardInstructor
-                +cardInstructor('img/Ludmila.png', 'Иванов Иван Иванович', 'Специалист по горнолыжному спорту')
-                +cardInstructor('img/Michail.png', 'Петров Петр Петрович', 'Специалист по горнолыжному спорту')
-                +cardInstructor('img/Gennadiy.png', 'Сидоров Сидор Сидорович', 'Специалист по горнолыжному спорту')
+                +cardInstructor('img/Ludmila.png', 'Людмила', 'Инструктор по горным лыжам категории С')
+                +cardInstructor('img/Michail.png', 'Михаил', 'NLI ISIA по горным лыжам \n15 лет опыта')
+                +cardInstructor('img/Gennadiy.png', 'Геннадий', 'Обучение на русском и английском языках')
 
-                include ../components/popupCard/popupCard
-                //+popupCard('img/Ludmila.png', 'Иванов Иван Иванович', 'Специалист по горнолыжному спорту')
+    -
+        var instDescr = [
+            {
+                img: 'img/Ludmila.png',
+                name: 'Людмила',
+                descr: 'Инструктор по горным лыжам категории С.  Большой опыт работы на горнолыжных курортах центрального Черноземья и Красной Поляны.\n' +
+                        'Обучении начального уровня.\n' +
+                        'Большой опыт работы с детьми . \n' +
+                        'В приоритете безопасность в процессе обучения. Коммуникабельность.\n' +
+                        'Индивидуальные и групповые занятия .'
+            },
+            {
+                img: 'img/Michail.png',
+                name: 'Михаил',
+                descr: '《C》NLI ISIA ISIA по горным лыжам.\n' +
+                        'Опыт катания на горных лыжах более 15 лет.\n' +
+                        'Обучаю детей от 3-х лет и взрослых правильной и безопасной технике катания более 5 лет на курортах Красной Поляны.\n' +
+                        'Freeride для начинающих и продвинутых. Научу контролировать скорость на крутых склонах.'
+            },
+            {
+                img: 'img/Gennadiy.png',
+                name: 'Геннадий',
+                descr: 'Обучение на русском и английском языках. В моей практике были ученики от 2, 5 лет до 70, никто не уехал с горы не сделав самостоятельный спуск,по желанию ученика делаем видео разбор прокатов, добиваемся отличного результата при минимальной затрате сил и времени.\n' +
+                        '10 лет работы в школе Кант. '
+            }
+        ]
+    include ../components/popupCard/popupCard
+    +popupCard(instDescr[0])
+    +popupCard(instDescr[1])
+    +popupCard(instDescr[2])
+    .popup-fon
+
     section.priceList(id="priceList")
         .container
             h1.priceList__title Услуги и цены

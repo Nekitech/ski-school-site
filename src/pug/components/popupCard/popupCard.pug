@@ -1,10 +1,10 @@
-mixin popupCard(img, name, text)
-    .popupCard
+mixin popupCard(inst)
+    .popup.popupCard(id=inst.name)
         .popupCard__wrapper
             .popupCard__img
-                img(src=img)
+                img(src=inst.img)
             .popupCard__textBlock
-                h3.popupCard__name #{name}
-                p.popupCard__text #{text}
+                h3.popupCard__name=inst.name
+                p.popupCard__text=inst.descr
             button.popupCard__button Записаться
-    //img.popupCard__close(src='img/close.svg')
+        img.popup-close.popupCard__close(src='img/close.svg')

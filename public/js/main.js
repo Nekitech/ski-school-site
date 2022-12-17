@@ -26,13 +26,13 @@
       /***/
     },
 
-    /***/"./src/js/popups.js":
-    /*!**************************!*\
+    /***/"./src/js/popupsCards.js":
+    /*!*******************************!*\
       !*** ./src/js/popupsCards.js ***!
-      \**************************/
+      \*******************************/
     /***/
-    function srcJsPopupsJs() {
-      eval("\n\n//# sourceURL=webpack://project-hexagon/./src/js/popupsCards.js?");
+    function srcJsPopupsCardsJs() {
+      eval("const id_popupsCards = document.querySelectorAll('.cardInstructor__button')\r\nconst popup_fon = document.querySelector('.popup-fon')\r\nconst close_popupsCards = document.querySelectorAll('.popup-close')\r\nid_popupsCards.forEach((btn) => {\r\n    btn.addEventListener('click', (e) => {\r\n        const id = e.target?.getAttribute('id')\r\n        const popup = document.querySelector(`.popup#${id}`)\r\n\r\n        popup.classList.add('activePopup')\r\n        document.body.style.overflow = 'hidden'\r\n        popup_fon.style.display = 'block'\r\n    })\r\n})\r\nclose_popupsCards.forEach((closeBtn) => {\r\n    closeBtn.addEventListener('click', (e) => {\r\n        const popup = e.target?.closest('.popup')\r\n        popup.classList.remove('activePopup')\r\n        document.body.style.overflow = 'auto'\r\n        popup_fon.style.display = 'none'\r\n    })\r\n})\r\n\n\n//# sourceURL=webpack://project-hexagon/./src/js/popupsCards.js?");
 
       /***/
     },
@@ -153,7 +153,7 @@
   /******/ // Load entry module and return exports
   /******/ // This entry module can't be inlined because the eval devtool is used.
   /******/
-  __webpack_require__("./src/js/popups.js");
+  __webpack_require__("./src/js/popupsCards.js");
   /******/
   __webpack_require__("./src/js/slider.js");
   /******/
