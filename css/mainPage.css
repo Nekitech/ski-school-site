@@ -1,30 +1,56 @@
 @font-face {
   src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.eot") format("eot"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-family: Poppins;
+  font-style: normal;
+  font-family: Montserrat;
 }
 
 @font-face {
   src: url("../fonts/Montserrat-Medium.ttf") format("ttf"), url("../fonts/Montserrat-Medium.eot") format("eot"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-family: Poppins;
+  font-style: normal;
+  font-family: Montserrat;
 }
 
 @font-face {
   src: url("../fonts/Montserrat-SemiBold.ttf") format("ttf"), url("../fonts/Montserrat-SemiBold.eot") format("eot"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
   font-family: Montserrat;
 }
 
 @font-face {
   src: url("../fonts/Montserrat-SemiBoldItalic.ttf") format("ttf"), url("../fonts/Montserrat-SemiBoldItalic.eot") format("eot"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2");
   font-weight: 600;
+  font-style: italic;
   font-family: Montserrat;
 }
 
 @font-face {
   src: url("../fonts/Montserrat-Light.ttf") format("ttf"), url("../fonts/Montserrat-Light.eot") format("eot"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
   font-weight: 300;
+  font-style: normal;
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../fonts/Inter-LightItalic.ttf") format("ttf"), url("../fonts/Inter-LightItalic.eot") format("eot"), url("../fonts/Inter-LightItalic.woff") format("woff"), url("../fonts/Inter-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../fonts/Inter-Regular.ttf") format("ttf"), url("../fonts/Inter-Regular.eot") format("eot"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-family: Poppins;
+}
+
+@font-face {
+  src: url("../fonts/Inter-SemiBold.ttf") format("ttf"), url("../fonts/Inter-SemiBold.eot") format("eot"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
   font-family: Montserrat;
 }
 
@@ -628,6 +654,7 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 .popupForm__afterSendForm__text {
@@ -726,6 +753,155 @@ button {
   letter-spacing: -0.015em;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__menu.activeBurger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F3F3F3;
+  z-index: 2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__menu.activeBurger {
+  overflow: hidden;
+}
+
+.header__logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 187px;
+  height: 60px;
+}
+
+.header__menu__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 168px;
+  height: 263px;
+}
+
+.header__menu__item {
+  margin-bottom: 24px;
+}
+
+.header__menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.header__menu__link {
+  text-decoration: none;
+  color: #315BA7;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+}
+
+.burger__icon {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.burger__lines {
+  width: 18px;
+  height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.burger__lines__line {
+  width: 18px;
+  height: 2px;
+  background: #303030;
+  position: relative;
+}
+
+.burger__icon.activeBurger .burger__lines__line:nth-child(2) {
+  display: none;
+}
+
+.burger__icon.activeBurger .burger__lines__line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 5px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.burger__icon.activeBurger .burger__lines__line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 5px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+body.blockScroll {
+  overflow: hidden;
 }
 
 .animText {
@@ -835,15 +1011,13 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   row-gap: 10px;
   margin-top: 45px;
 }
 
 .priceList {
   margin: 75px 0;
+  font-family: Inter, sans-serif;
 }
 
 .priceList__table-wrapper {
@@ -1182,6 +1356,17 @@ button {
   .popupForm__form__email::placeholder,
   .popupForm__form__text::placeholder {
     font-size: 12px;
+  }
+
+  .popupForm__button {
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .burger__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
 @supports (-webkit-appearance:none) {
