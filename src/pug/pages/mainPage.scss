@@ -9,6 +9,7 @@
 
 //chunk
 @import '../chunk/footer/footer';
+@import '../chunk/header/header';
 $colorPreview: #fff;
 
 //animations
@@ -102,7 +103,6 @@ $colorInstuctors: #000;
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    justify-content: center;
     row-gap: 10px;
     margin-top: 45px;
   }
@@ -113,6 +113,7 @@ $colorInstuctors: #000;
 
 .priceList {
   margin: 75px 0;
+  font-family: Inter, sans-serif;
 
   &__table-wrapper {
     margin-top: 43px;

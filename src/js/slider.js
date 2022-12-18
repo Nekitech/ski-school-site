@@ -5,7 +5,7 @@ const sliderReview = new SliderTech('.slider', {
     speed: 0.6,
     counter: false,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     timeout: 2,
 })
 sliderReview.initSlider()

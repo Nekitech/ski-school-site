@@ -26,6 +26,17 @@
       /***/
     },
 
+    /***/"./src/js/burger.js":
+    /*!**************************!*\
+      !*** ./src/js/burger.js ***!
+      \**************************/
+    /***/
+    function srcJsBurgerJs() {
+      eval("const burger_icon = document.querySelector('.burger__icon');\r\nconst burger_items = document.querySelectorAll('.header__menu__item')\r\n;\r\nburger_icon.addEventListener('click', () => {\r\n    burger_icon.classList\r\n        .toggle('activeBurger');\r\n    document.querySelector('.header__menu')\r\n        .classList.toggle('activeBurger');\r\n    document.body.classList.toggle('blockScroll');\r\n})\r\nburger_items.forEach((item) => {\r\n    item.addEventListener('click', () => {\r\n        burger_icon.classList\r\n            .remove('activeBurger');\r\n        document.querySelector('.header__menu')\r\n            .classList.remove('activeBurger');\r\n        document.body.classList.remove('blockScroll');\r\n    })\r\n})\n\n//# sourceURL=webpack://project-hexagon/./src/js/burger.js?");
+
+      /***/
+    },
+
     /***/"./src/js/popup.js":
     /*!*************************!*\
       !*** ./src/js/popup.js ***!
@@ -152,6 +163,8 @@
   /******/ // startup
   /******/ // Load entry module and return exports
   /******/ // This entry module can't be inlined because the eval devtool is used.
+  /******/
+  __webpack_require__("./src/js/burger.js");
   /******/
   __webpack_require__("./src/js/popup.js");
   /******/
