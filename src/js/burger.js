@@ -17,3 +17,13 @@ burger_items.forEach((item) => {
         document.body.classList.remove('blockScroll');
     })
 })
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        burger_icon.classList
+            .remove('activeBurger');
+        document.querySelector('.header__menu')
+            .classList.remove('activeBurger');
+        document.body.classList.remove('blockScroll');
+    }
+})

@@ -72,3 +72,10 @@
     color: #FFFFFF;
   }
 }
+
+@media (max-width: 620px) {
+  .footer__nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

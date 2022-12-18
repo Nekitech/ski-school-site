@@ -70,6 +70,40 @@
 @media (max-width: 860px) {
   .instructors__wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
+}
+@media (max-width: $containerWidth) {
+  .elementSlider.reviews__elemSlider {
+    min-width: calc(100vw - 100px);
+  }
+  .reviews__elemSlider__textBlock {
+    width: calc(100vw - 100px);
+  }
+}
+
+@media (max-width: 520px) {
+  .reviews__elemSlider__textBlock__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .elementSlider.reviews__elemSlider {
+    flex-direction: column;
+  }
+  .reviews__elemSlider__img {
+    max-width: calc(100vw - 200px);
+    width: 100%;
+    align-self: center;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .reviews__elemSlider__img {
+    width: 155px;
+    height: 152px;
+    align-self: flex-start;
+  }
 }
