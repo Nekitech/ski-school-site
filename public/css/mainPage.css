@@ -1101,16 +1101,16 @@ body.blockScroll {
   text-align: start;
 }
 
-.priceList__table-cell:nth-child(3) {
+.priceList__table-cell:nth-child(2) {
   background-color: #1759D6;
   color: #fff;
 }
 
-.priceList__table-head .priceList__table-cell:nth-child(3) {
+.priceList__table-head .priceList__table-cell:nth-child(2) {
   border-radius: 4px 4px 0px 0px;
 }
 
-.priceList__table-body .priceList__table-row:last-child .priceList__table-cell:nth-child(3) {
+.priceList__table-body .priceList__table-row:last-child .priceList__table-cell:nth-child(2) {
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -1307,7 +1307,7 @@ body.blockScroll {
     width: 800px;
   }
 
-  .priceList__table-cell:nth-child(2),
+  .priceList__table-cell:nth-child(3),
   .priceList__table-cell:nth-child(4) {
     display: none;
   }

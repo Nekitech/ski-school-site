@@ -181,19 +181,19 @@ $colorInstuctors: #000;
     text-align: start;
   }
 
-  &__table-cell:nth-child(3) {
+  &__table-cell:nth-child(2) {
     background-color: #1759D6;
     color: #fff
   }
 
 
-  &__table-head &__table-cell:nth-child(3) {
+  &__table-head &__table-cell:nth-child(2) {
     border-radius: 4px 4px 0px 0px;
   }
 
   &__table-body
   &__table-row:last-child
-  &__table-cell:nth-child(3) {
+  &__table-cell:nth-child(2) {
     border-radius: 0px 0px 4px 4px;
   }
 
