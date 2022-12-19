@@ -279,6 +279,12 @@ $colorInstuctors: #000;
   }
   &__title {
     margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.015em;
+    color: #303030;
   }
   &__content {
     display: flex;

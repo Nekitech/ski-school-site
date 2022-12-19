@@ -583,6 +583,7 @@ button {
 .popupForm__form__name::-webkit-input-placeholder,
 .popupForm__form__email::-webkit-input-placeholder,
 .popupForm__form__text::-webkit-input-placeholder {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -594,6 +595,7 @@ button {
 .popupForm__form__name::-moz-placeholder,
 .popupForm__form__email::-moz-placeholder,
 .popupForm__form__text::-moz-placeholder {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -605,6 +607,7 @@ button {
 .popupForm__form__name:-ms-input-placeholder,
 .popupForm__form__email:-ms-input-placeholder,
 .popupForm__form__text:-ms-input-placeholder {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -616,6 +619,7 @@ button {
 .popupForm__form__name::-ms-input-placeholder,
 .popupForm__form__email::-ms-input-placeholder,
 .popupForm__form__text::-ms-input-placeholder {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -627,6 +631,7 @@ button {
 .popupForm__form__name::placeholder,
 .popupForm__form__email::placeholder,
 .popupForm__form__text::placeholder {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1199,6 +1204,12 @@ body.blockScroll {
 
 .QandA__title {
   margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.015em;
+  color: #303030;
 }
 
 .QandA__content {
@@ -1323,12 +1334,26 @@ body.blockScroll {
     flex-direction: column-reverse;
   }
 
-  .QandA__popularQuestions__title {
+  .QandA__title {
     margin-bottom: 32px;
+    text-align: center;
   }
 
   .QandA__popularQuestions__text {
     margin: 32px 0;
+  }
+
+  .QandA__popularQuestions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .elementSlider.reviews__elemSlider {
@@ -1336,6 +1361,9 @@ body.blockScroll {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .reviews__elemSlider__img {
@@ -1343,6 +1371,21 @@ body.blockScroll {
     width: 100%;
     -ms-flex-item-align: center;
     align-self: center;
+  }
+
+  .reviews__elemSlider__textBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__elemSlider__textBlock__name {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .preview__textBlock {
@@ -1438,8 +1481,6 @@ body.blockScroll {
   .reviews__elemSlider__img {
     width: 155px;
     height: 152px;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
   }
 
   .preview__textBlock {
