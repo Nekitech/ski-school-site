@@ -34,6 +34,13 @@
 }
 
 @font-face {
+  src: url("../fonts/Montserrat-Black.ttf") format("ttf"), url("../fonts/Montserrat-Black.eot") format("eot"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-family: Montserrat;
+}
+
+@font-face {
   src: url("../fonts/Inter-LightItalic.ttf") format("ttf"), url("../fonts/Inter-LightItalic.eot") format("eot"), url("../fonts/Inter-LightItalic.woff") format("woff"), url("../fonts/Inter-LightItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
@@ -1334,6 +1341,48 @@ body.blockScroll {
     align-self: center;
   }
 
+  .preview__textBlock {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: static;
+    top: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .preview__name {
+    text-align: center;
+    font-size: 30px;
+    line-height: 29px;
+  }
+
+  .preview__title {
+    font-size: 30px;
+    line-height: 29px;
+  }
+
+  .preview__motto {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .preview__number {
+    display: none;
+  }
+
+  .preview__titleBlock {
+    margin-bottom: 30px;
+  }
+
+  .preview__logo {
+    left: 14px;
+  }
+
   .burger__icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1387,6 +1436,34 @@ body.blockScroll {
     height: 152px;
     -ms-flex-item-align: start;
     align-self: flex-start;
+  }
+
+  .preview__textBlock {
+    height: 90vh;
+  }
+
+  .preview__name {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .preview__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .preview__motto {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .preview__logo {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    left: -30px;
   }
 
   .popupForm {
