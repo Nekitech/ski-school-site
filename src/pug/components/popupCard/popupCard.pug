@@ -6,5 +6,7 @@ mixin popupCard(inst, num)
             .popupCard__textBlock
                 h3.popupCard__name=inst.name
                 p.popupCard__text=inst.descr
-            button.popupCard__button Записаться
+            button.popupCard__button
+                a(href=`https://wa.me/${inst.number}` target="_blank")
+                    | Записаться
         img.popup-close.popupCard__close(src='img/close.svg')

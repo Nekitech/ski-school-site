@@ -63,15 +63,18 @@
     align-items: center;
     justify-content: center;
 
+    border: 0;
+
+    cursor: pointer;
+  }
+  &__button a {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 
     color: #FFFFFF;
-    border: 0;
-
-    cursor: pointer;
+    text-decoration: none;
   }
 
   &__close {
@@ -133,8 +136,10 @@
     margin-bottom: 20px;
   }
   .popupCard__button {
-    font-size: 13px;
     height: 31px;
+  }
+  .popupCard__button a {
+    font-size: 13px;
   }
   .popupCard__close {
     transform: scale(0.6);
