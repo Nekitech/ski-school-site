@@ -9,7 +9,7 @@ block page
                 h1.preview__title Горнолыжный курорт
                 h1.preview__name «Skibird»
             p.preview__motto “Безопасность и надежность - наше кредо”
-    section.instructors(id="instructors")
+    section.instructors.wow.animate__fadeInUp(id="instructors" data-wow-duration="2s")
         .container
             h1.instructors__title Наши инструкторы
             .instructors__wrapper
@@ -50,7 +50,7 @@ block page
     +popupCard(instDescr[2], 3)
 
 
-    section.priceList(id="priceList")
+    section.priceList.wow.animate__fadeInUp(id="priceList" data-wow-duration="2s")
         .container
             h1.priceList__title Услуги и цены
             .priceList__table-wrapper
@@ -146,7 +146,7 @@ block page
                                 | 3800
                             td.priceList__table-cell
                                 | 4400
-    section.reviews(id="reviews")
+    section.reviews.wow.animate__fadeInUp(id="reviews" data-wow-duration="2s")
         .container
             .slider.reviews__slider
                 h1.reviews__title Отзывы клиентов
@@ -213,7 +213,7 @@ block page
                                 h3.reviews__elemSlider__textBlock__name
                                     | Ксения Петрова
                 .dotsSlider
-    section.QandA(id="QandA")
+    section.QandA.wow.animate__fadeInUp(id="QandA" data-wow-duration="2s")
         .container
             .QandA__wrapper
                 h1.QandA__title

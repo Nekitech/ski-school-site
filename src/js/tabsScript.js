@@ -1,7 +1,6 @@
 const tabs = document.querySelector('.tabs')
 // const listTabs = document.querySelectorAll('.tabs__item')
 tabs.addEventListener('click', (e) => {
-    console.log(e.target)
     if(!e.target?.classList.contains('tabs__item')) return
     // listTabs.forEach((tab) => {
     //     tab.classList.remove('activeTab')

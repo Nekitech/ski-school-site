@@ -16,6 +16,7 @@ const scss = require('./task/scss.js')
 const js = require('./task/scripts.js')
 const img = require('./task/img.js')
 const fonts = require('./task/fonts.js')
+const css = require('./task/css.js')
 
 // Наблюдение
 const watcher = () => {
@@ -38,7 +39,7 @@ const server = () => {
 // Билд
 const build = series(
     clear,
-    parallel(pug, scss, js, img, fonts)
+    parallel(pug, scss, js, img, fonts, css)
 )
 
 // Разработка
@@ -55,6 +56,7 @@ exports.js = js
 exports.img = img
 exports.pug = pug
 exports.fonts = fonts
+exports.css = css
 
 exports.default = pluginsConfig.isProd ? build : dev
 
