@@ -480,13 +480,17 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.popupCard__button a {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
-  border: 0;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .popupCard__close {
@@ -1605,8 +1609,11 @@ body.blockScroll {
   }
 
   .popupCard__button {
-    font-size: 13px;
     height: 31px;
+  }
+
+  .popupCard__button a {
+    font-size: 13px;
   }
 
   .popupCard__close {
