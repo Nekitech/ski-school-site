@@ -7,6 +7,9 @@
   .priceList__table {
     width: 800px;
   }
+  .preview__textBlock {
+    height: 70vh;
+  }
 
 }
 
@@ -137,7 +140,7 @@
 
 @media (max-width: 420px) {
   .preview__textBlock {
-    height: 90vh;
+    height: 80vh;
   }
   .preview__name {
     text-align: center;
@@ -173,15 +176,18 @@
     text-align: center;
     font-size: 30px;
     line-height: 29px;
+    text-shadow: 0 0 20px #000;
   }
   .preview__title {
     font-size: 30px;
     line-height: 29px;
+    text-shadow: 0 0 20px #000;
   }
   .preview__motto {
     font-size: 20px;
     line-height: 20px;
     text-align: end;
+    text-shadow: 0 0 20px #000;
 
   }
   .preview__number {
@@ -192,12 +198,6 @@
   }
   .preview__logo {
     left: 14px;
-  }
-
-}
-@media (max-width: 768px) {
-  .preview__textBlock {
-    height: 86vh;
   }
 
 }

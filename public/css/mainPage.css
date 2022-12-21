@@ -1312,6 +1312,10 @@ body.blockScroll {
     width: 800px;
   }
 
+  .preview__textBlock {
+    height: 70vh;
+  }
+
   .priceList__table-cell:nth-child(3),
   .priceList__table-cell:nth-child(4) {
     display: none;
@@ -1417,17 +1421,20 @@ body.blockScroll {
     text-align: center;
     font-size: 30px;
     line-height: 29px;
+    text-shadow: 0 0 20px #000;
   }
 
   .preview__title {
     font-size: 30px;
     line-height: 29px;
+    text-shadow: 0 0 20px #000;
   }
 
   .preview__motto {
     font-size: 20px;
     line-height: 20px;
     text-align: end;
+    text-shadow: 0 0 20px #000;
   }
 
   .preview__number {
@@ -1440,10 +1447,6 @@ body.blockScroll {
 
   .preview__logo {
     left: 14px;
-  }
-
-  .preview__textBlock {
-    height: 86vh;
   }
 
   .burger__icon {
@@ -1511,7 +1514,7 @@ body.blockScroll {
   }
 
   .preview__textBlock {
-    height: 90vh;
+    height: 80vh;
   }
 
   .preview__name {
