@@ -75,7 +75,7 @@
 
 @media (max-width: 320px) {
   .tabs__item__name {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
@@ -209,6 +209,13 @@
     align-self: center;
   }
 
+
 }
 
+@media (max-width: 636px) {
+  .cardInstructor:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+}
 

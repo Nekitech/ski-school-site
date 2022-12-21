@@ -938,7 +938,7 @@ body.blockScroll {
 .preview {
   width: 100vw;
   height: 100vh;
-  background: url("../img/fon_preview.webp") no-repeat;
+  background: url("../img/fon_preview1.webp") no-repeat;
   background-size: cover;
 }
 
@@ -1467,6 +1467,16 @@ body.blockScroll {
 }
 }
 
+@media (max-width: 636px) {
+  .cardInstructor:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
 @media (max-width: 620px) {
   .footer__nav {
     -webkit-box-orient: vertical;
@@ -1535,6 +1545,14 @@ body.blockScroll {
     align-self: center;
   }
 
+  .tabs__item {
+    min-height: 78px;
+  }
+
+  .tabs__item__name {
+    font-size: 16px;
+  }
+
   .popupForm {
     padding: 30px 20px;
     width: 340px;
@@ -1595,6 +1613,10 @@ body.blockScroll {
     font-size: 13px;
   }
 
+  .tabs__item {
+    min-height: 80px;
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1602,7 +1624,7 @@ body.blockScroll {
 
 @media (max-width: 320px) {
   .tabs__item__name {
-    font-size: 18px;
+    font-size: 14px;
   }
 
 @supports (-webkit-appearance:none) {
