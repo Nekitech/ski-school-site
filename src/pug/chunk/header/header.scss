@@ -26,7 +26,7 @@
   }
   &__logo {
     position: absolute;
-    top: 25px;
+    top: 36px;
     left: 25px;
     width: 187px;
     height: 60px;
@@ -36,7 +36,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 168px;
     height: 263px;
@@ -81,6 +81,7 @@
     cursor: pointer;
 
     z-index: 3;
+    top: 36px;
   }
 
   &__lines {

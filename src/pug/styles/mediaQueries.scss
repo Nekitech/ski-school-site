@@ -158,9 +158,9 @@
 
   }
   .preview__logo {
-    transform: scale(0.7);
-    left: -30px;
+    left: 20px;
   }
+
 
 }
 @media (max-width: 768px) {
@@ -198,6 +198,8 @@
   }
   .preview__logo {
     left: 14px;
+    width: 187px;
+    height: 60px;
   }
 
 }

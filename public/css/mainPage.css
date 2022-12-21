@@ -806,7 +806,7 @@ button {
 
 .header__logo {
   position: absolute;
-  top: 25px;
+  top: 36px;
   left: 25px;
   width: 187px;
   height: 60px;
@@ -821,9 +821,9 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -868,6 +868,7 @@ button {
   align-items: center;
   cursor: pointer;
   z-index: 3;
+  top: 36px;
 }
 
 .burger__lines {
@@ -946,7 +947,7 @@ body.blockScroll {
   width: 310px;
   height: 97px;
   position: absolute;
-  top: 17px;
+  top: 33px;
   left: 101px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1447,6 +1448,8 @@ body.blockScroll {
 
   .preview__logo {
     left: 14px;
+    width: 187px;
+    height: 60px;
   }
 
   .burger__icon {
@@ -1535,10 +1538,7 @@ body.blockScroll {
   }
 
   .preview__logo {
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
-    left: -30px;
+    left: 20px;
   }
 
   .reviews__title {
