@@ -1303,6 +1303,11 @@ body.blockScroll {
 }
 
 @media (max-width: 768px) {
+  .preview {
+    background: url("../img/fonImg.webp") no-repeat bottom;
+    background-size: cover;
+  }
+
   .priceList__table {
     width: 800px;
   }
@@ -1361,9 +1366,9 @@ body.blockScroll {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .reviews__elemSlider__img {
@@ -1395,9 +1400,9 @@ body.blockScroll {
     position: static;
     top: 0;
     right: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding: 0 20px;
   }
 
@@ -1428,6 +1433,10 @@ body.blockScroll {
 
   .preview__logo {
     left: 14px;
+  }
+
+  .preview__textBlock {
+    height: 86vh;
   }
 
   .burger__icon {
@@ -1481,6 +1490,7 @@ body.blockScroll {
   .reviews__elemSlider__img {
     width: 155px;
     height: 152px;
+    margin-right: 140px;
   }
 
   .preview__textBlock {
@@ -1509,6 +1519,13 @@ body.blockScroll {
     -ms-transform: scale(0.7);
     transform: scale(0.7);
     left: -30px;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+    line-height: 29px;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   .popupForm {

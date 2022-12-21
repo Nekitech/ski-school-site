@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+  .preview {
+    background: url("../img/fonImg.webp") no-repeat bottom;
+    background-size: cover;
+
+  }
   .priceList__table {
     width: 800px;
   }
@@ -97,7 +102,7 @@
 @media (max-width: 768px) {
   .elementSlider.reviews__elemSlider {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .reviews__elemSlider__img {
     max-width: calc(100vw - 200px);
@@ -119,6 +124,7 @@
   .reviews__elemSlider__img {
     width: 155px;
     height: 152px;
+    margin-right: 140px;
   }
 }
 
@@ -153,7 +159,7 @@
     position: static;
     top: 0;
     right: 0;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 20px;
   }
   .preview__name {
@@ -182,3 +188,20 @@
   }
 
 }
+@media (max-width: 768px) {
+  .preview__textBlock {
+    height: 86vh;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .reviews__title {
+    font-size: 24px;
+    line-height: 29px;
+    align-self: center;
+  }
+
+}
+
+
