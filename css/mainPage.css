@@ -1325,9 +1325,12 @@ body.blockScroll {
     width: 100%;
   }
 
-  .priceList__table-cell:nth-child(3) {
-    padding: 20px 30px;
-    font-size: 20px;
+  .priceList__table-cell:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .priceList__table-cell:nth-child(2) {
+    width: 145px;
   }
 
   .QandA__content {
@@ -1337,6 +1340,10 @@ body.blockScroll {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+  }
+
+  .QandA__popularQuestions {
+    margin-right: 0;
   }
 
   .QandA__title {
