@@ -17,7 +17,7 @@ const img = () => {
         .pipe(webp())
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.mozjpeg({quality: 45, progressive: true}),
             imagemin.optipng({optimizationLevel: 1}),
             imagemin.svgo({
                 plugins: [
