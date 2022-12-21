@@ -1617,6 +1617,7 @@ body.blockScroll {
   .popupCard__name {
     font-size: 22px;
     line-height: 29px;
+    margin-top: 20px;
   }
 
   .popupCard__text {
