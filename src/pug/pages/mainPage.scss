@@ -30,11 +30,11 @@ $colorPreview: #fff;
   background-size: cover;
 
   &__logo {
-    width: 310px;
-    height: 97px;
+    width: 370px;
+    height: 115px;
     position: absolute;
     top: 33px;
-    left: 101px;
+    left: 40px;
     user-select: none;
   }
 
@@ -66,22 +66,23 @@ $colorPreview: #fff;
     font-weight: 900;
     font-size: 48px;
     line-height: 59px;
+    position: relative;
+    text-align: center;
   }
 
-  &__name {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 59px;
-    text-align: end;
-  }
 
   &__motto {
     font-style: italic;
     font-weight: 600;
     font-size: 40px;
     line-height: 40px;
+
+    position: relative;
+    z-index: 1;
+
   }
+
+
 }
 
 
@@ -256,7 +257,7 @@ $colorInstuctors: #000;
   min-width: calc($containerWidth - 100px);
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: flex-start;
 
   background-color: #1759D6;
