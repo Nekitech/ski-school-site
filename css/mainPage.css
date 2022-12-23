@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.eot") format("eot"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -806,10 +808,10 @@ button {
 
 .header__logo {
   position: absolute;
-  top: 36px;
+  top: 32px;
   left: 25px;
-  width: 187px;
-  height: 60px;
+  width: 259px;
+  height: 83px;
 }
 
 .header__menu__list {
@@ -868,7 +870,7 @@ button {
   align-items: center;
   cursor: pointer;
   z-index: 3;
-  top: 36px;
+  top: 50px;
 }
 
 .burger__lines {
@@ -944,11 +946,11 @@ body.blockScroll {
 }
 
 .preview__logo {
-  width: 310px;
-  height: 97px;
+  width: 370px;
+  height: 115px;
   position: absolute;
   top: 33px;
-  left: 101px;
+  left: 40px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -992,14 +994,8 @@ body.blockScroll {
   font-weight: 900;
   font-size: 48px;
   line-height: 59px;
-}
-
-.preview__name {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 59px;
-  text-align: end;
+  position: relative;
+  text-align: center;
 }
 
 .preview__motto {
@@ -1007,6 +1003,8 @@ body.blockScroll {
   font-weight: 600;
   font-size: 40px;
   line-height: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .instructors {
@@ -1182,9 +1180,9 @@ body.blockScroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1309,17 +1307,88 @@ body.blockScroll {
     background-size: cover;
   }
 
-  .priceList__table {
-    width: 800px;
+  .preview__textBlock {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: static;
+    top: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .preview__title {
+    font-size: 30px;
+    line-height: 29px;
+  }
+
+  .preview__motto {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
+    width: 100vw;
+  }
+
+  .preview__number {
+    display: none;
+  }
+
+  .preview__titleBlock {
+    margin-bottom: 30px;
+  }
+
+  .preview__logo {
+    left: 14px;
+    width: 259px;
+    height: 83px;
   }
 
   .preview__textBlock {
-    height: 70vh;
+    height: 84vh;
+  }
+
+  .preview__title div {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#72E6FF));
+    background: -o-linear-gradient(top, #FFFFFF 0%, #72E6FF 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, #72E6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    width: 100%;
+  }
+
+  .preview__title:after {
+    content: "Инструкторы «Skibird» горнолыжного курорта Красная Поляна";
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .preview__motto:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: rgba(23, 89, 214, 0.036);
+    -webkit-box-shadow: inset 15.5667px -15.5667px 15.5667px rgba(17, 68, 163, 0.036), inset -15.5667px 15.5667px 15.5667px rgba(255, 255, 255, 0.036);
+    box-shadow: inset 15.5667px -15.5667px 15.5667px rgba(17, 68, 163, 0.036), inset -15.5667px 15.5667px 15.5667px rgba(255, 255, 255, 0.036);
+    -webkit-backdrop-filter: blur(5.75967px);
+    backdrop-filter: blur(5.75967px);
+    z-index: -1;
+    padding: 9px 0;
   }
 
   .priceList__table-cell:nth-child(3),
   .priceList__table-cell:nth-child(4) {
     display: none;
+  }
+
+  .priceList__table {
+    width: 800px;
   }
 
   .priceList__table-wrapper {
@@ -1405,53 +1474,6 @@ body.blockScroll {
     margin-bottom: 20px;
   }
 
-  .preview__textBlock {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    position: static;
-    top: 0;
-    right: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0 20px;
-  }
-
-  .preview__name {
-    text-align: center;
-    font-size: 30px;
-    line-height: 29px;
-    text-shadow: 0 0 20px #000;
-  }
-
-  .preview__title {
-    font-size: 30px;
-    line-height: 29px;
-    text-shadow: 0 0 20px #000;
-  }
-
-  .preview__motto {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: end;
-    text-shadow: 0 0 20px #000;
-  }
-
-  .preview__number {
-    display: none;
-  }
-
-  .preview__titleBlock {
-    margin-bottom: 30px;
-  }
-
-  .preview__logo {
-    left: 14px;
-    width: 187px;
-    height: 60px;
-  }
-
   .burger__icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1520,12 +1542,6 @@ body.blockScroll {
     height: 80vh;
   }
 
-  .preview__name {
-    text-align: center;
-    font-size: 24px;
-    line-height: 29px;
-  }
-
   .preview__title {
     font-size: 24px;
     line-height: 29px;
@@ -1534,7 +1550,6 @@ body.blockScroll {
   .preview__motto {
     font-size: 16px;
     line-height: 20px;
-    text-align: end;
   }
 
   .preview__logo {
