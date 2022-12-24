@@ -67,9 +67,22 @@ $colorPreview: #fff;
     font-size: 48px;
     line-height: 59px;
     position: relative;
-    text-align: center;
+    text-align: end;
+  }
+  &__title div {
+    background: linear-gradient(180deg, #FFFFFF 0%, #72E6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
+  &__title:after {
+    content: 'Инструкторы «Skibird» горнолыжного курорта Красная Поляна';
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+
+  }
 
   &__motto {
     font-style: italic;
